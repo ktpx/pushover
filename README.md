@@ -1,18 +1,24 @@
-# pushover
-Pushover Notification Client
+# Pushover Notification Client
 
-Requirements:
+Client to facilitate sending push notifications via the pushover.net API.  An existing
+account is required.  
 
-libconfig-general-perl
-libwww-perl
+Setup your account on pushover.net, then add token and secret in the config file, or
+give as input option.
 
-You can add a config file with many default, and tokens.
+Perl Requirements:
+-------------------
+
+* libconfig-general-perl
+* libwww-perl
 
 pushover.conf
-
-token=yourtoken
-secret=yoursecret
+````
+ token=yourtoken
+ secret=yoursecret
+````
 
 Example
-
-./pushover.pl -m 'hello pushover!' --prio 1 --sound bike
+````
+$ ./pushover.pl -m 'hello pushover!' --prio 1 --sound bike
+````
