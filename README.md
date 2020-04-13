@@ -20,5 +20,5 @@ pushover.conf
 
 Example
 ````
-$ ./pushover.pl -m 'hello pushover!' --prio 1 --sound bike
+$ ./pushover.pl -m 'hello pushover!' --prio normal --sound bike
 ````
